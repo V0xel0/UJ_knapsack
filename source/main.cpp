@@ -120,9 +120,9 @@ int main()
 		for (s16 i = 10; i < 100; i+=2)
 		{
 			s16 chrom_to_change = (s16)random_number(0, 50, rng);
-			auto parent_1 = prev_generation[chrom_to_change];
+			auto parent_1 = prev_generation[fit_scores[chrom_to_change].chrom_pos];
 			chrom_to_change = (s16)random_number(0, 50, rng);
-			auto parent_2 = prev_generation[chrom_to_change];
+			auto parent_2 = prev_generation[fit_scores[chrom_to_change].chrom_pos];
 
 			for (s16 chr = 0; chr < parent_1.size() / 2; chr++)
 			{
