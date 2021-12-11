@@ -94,8 +94,8 @@ int main()
 			{
 				if (chromosome[i] == true)
 				{
-					score += 1; // treat all items as having same value
 					total_weight += items[i];
+					score = total_weight;
 				}
 			}
 
