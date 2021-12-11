@@ -5,6 +5,7 @@
 #include <iterator>
 #include <numeric>
 #include <iostream>
+#include <fstream>
 #include <bitset>
 #include <cassert>
 
@@ -163,10 +164,15 @@ int main()
 			to_print++;
 		}
 	}
-	
+
+	// Simple redirect to file, can comment if not needed
+	std::ofstream out("output.txt", std::ofstream::app);
+    std::streambuf *coutbuf = std::cout.rdbuf();
+    std::cout.rdbuf(out.rdbuf());
+
 	// Solution print - the solution is in new generation, even after swap cause mutations are only "handled" in next iterations (score = 0 if too big)
 	std::cout << "\nKnapsack size: " << knapsack_size;
-	std::cout << "\nBest fit score " << fit_scores[0].fit << "\nchromosome: " << fit_scores[0].chrom_pos << "  " << final_chromosome;
+	std::cout << "\nBest fit score " << fit_scores[0].fit << "\nChromosome: " << fit_scores[0].chrom_pos << "  " << final_chromosome;
 	std::cout <<"\nTotal weight: "   << total_weight;
 	std::cout <<"\nItems in solution:\n";
 
@@ -178,4 +184,5 @@ int main()
 		std::cout << final_items[i] << " ";
 	}
 	
+	std::cout << "\n\n";
 }
