@@ -1,0 +1,7 @@
+https://sound.eti.pg.gda.pl/student/isd/isd03-algorytmy_genetyczne.pdf
+https://muzamilshahbaz.medium.com/knapsack-problem-using-genetic-algorithm-with-source-code-9ec99036675c
+https://www.youtube.com/watch?v=iL--xqGgd0g
+https://www.sciencedirect.com/topics/engineering/genetic-algorithm
+https://www.geeksforgeeks.org/genetic-algorithms/
+https://en.wikipedia.org/wiki/Genetic_algorithm
+https://users.cg.tuwien.ac.at/zsolnai/gfx/knapsack_genetic/
